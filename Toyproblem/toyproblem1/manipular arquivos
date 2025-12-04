@@ -1,0 +1,29 @@
+import pandas as pd 
+import numpy as np 
+from sklearn.ensemble import RandomForestClassifier
+import matplotlib.pyplot as plt
+
+if __name__ == "__main__": 
+
+    dogs = pd.read_csv("df_dogs.csv")
+    raw = pd.read_csv("df_raw.csv")
+
+    print(raw.info())
+
+    list_caes_test = ["04-02-LE","04-03-LD","05-13-LE","05-14-LE"]
+    list_caes = ['04-01-LD', '05-05-LE', '04-07-LE', '05-22-LE', '04-08-LE', '11-24-IK', '11-21-IK', '10-13-LK']
+
+    def criar_df_filt(list: list) -> pd.DataFrame: 
+        """lindo"""
+        raw_filt = pd.DataFrame()
+        for cachorro in list: 
+            raw_filt = pd.concat([raw_filt, raw[raw['Subject'] == cachorro]])
+        return raw_filt
+
+    raw_menor = criar_df_filt(list_caes)
+    raw_teste = criar_df_filt(list_caes_test)
+
+    raw_menor.to_csv("df_filt.csv", index = False)
+    raw_teste.to_csv("df_test.csv", index = False)
+
+    print(raw_menor.info())
