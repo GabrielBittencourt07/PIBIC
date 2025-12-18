@@ -1,0 +1,15 @@
+**Started processing TSFEL features**
+             w_size 100, w_overlap 0.5, t_time 0:00:00.010000, n_jobs 4
+
+Diretório de saída: 
+
+Colunas selecionadas:
+Index(['Back.Acc.X', 'Back.Acc.Y', 'Back.Acc.Z', 'Back.Gyr.X', 'Back.Gyr.Y',
+       'Back.Gyr.Z', 'Back.Mag.X', 'Back.Mag.Y', 'Back.Mag.Z', 'Chest.Acc.X',
+       'Chest.Acc.Y', 'Chest.Acc.Z', 'Chest.Gyr.X', 'Chest.Gyr.Y',
+       'Chest.Gyr.Z', 'Chest.Mag.X', 'Chest.Mag.Y', 'Chest.Mag.Z',
+       'Neck.Acc.X', 'Neck.Acc.Y', 'Neck.Acc.Z', 'Neck.Gyr.X', 'Neck.Gyr.Y',
+       'Neck.Gyr.Z', 'Neck.Mag.X', 'Neck.Mag.Y', 'Neck.Mag.Z'],
+      dtype='object')
+
+**Finished saving TSFEL features**
