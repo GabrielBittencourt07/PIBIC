@@ -43,13 +43,13 @@ x_treino = dados.drop(columns=["Position", "Timestamp", "Type", "Breed", "Subjec
 y_treino = dados["Position"]
 # Definindo os hiperparâmetros para Grid Search (3 valores para cada)
 # param_grid = {
-#     'n_estimators': [40, 80, 120],           # número de árvores
-#     'max_depth': [15, 25, 35],                # profundidade máxima
+#     'n_estimators': [100, 200, 300],           # número de árvores
+#     'max_depth': [10, 15, 20],                # profundidade máxima
 #     'min_samples_leaf': [10, 20, 30]         # mínimo de amostras por folha
 # }
 
 # Criando o modelo base
-rf = RandomForestClassifier(
+rf_base = RandomForestClassifier(
     n_estimators=300,        # número de árvores
     max_depth=12,          # deixe None inicialmente
     min_samples_split=2,
@@ -85,7 +85,7 @@ print(cm)
 #     param_grid=param_grid,
 #     cv=5,                    # 5 folds
 #     scoring='accuracy',
-#     n_jobs=-1,
+#     n_jobs=6,
 #     verbose=2,
 #     return_train_score=True
 # )

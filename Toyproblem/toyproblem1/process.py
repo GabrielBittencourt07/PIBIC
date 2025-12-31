@@ -62,7 +62,15 @@ def features_tsfel(df_raw, w_size, w_overlap, t_time, n_jobs=4):
     cols = df_raw.columns[df_raw.columns.str.contains(r'\.X|\.Y|\.Z', regex=True)]
 
     # feature extraction settings
-    cfg = tsfel.get_features_by_domain()
+    cfg_full = tsfel.get_features_by_domain("statistical")
+
+    cfg = {
+        "statistical": {
+            "Mean": cfg_full["statistical"]["Mean"],
+            "Standard deviation": cfg_full["statistical"]["Standard deviation"],
+            "Euclidean distance": cfg_full["statistical"]["Euclidean distance"]
+        }
+    }
 
     for subject in df_raw['Subject'].unique():
 
