@@ -2,7 +2,6 @@
 #                                   Imports                                 #
 # ------------------------------------------------------------------------- #
 
-from multiprocessing.dummy import freeze_support
 import os
 import pandas as pd
 import numpy as np
@@ -37,6 +36,7 @@ def transitions(df):
 
     return(df)
 
+
 def features_tsfel(df_raw, w_size, w_overlap, t_time, n_jobs=4):
     """
     Extrai características usando TSFEL (Time Series Feature Extraction Library)
@@ -63,7 +63,16 @@ def features_tsfel(df_raw, w_size, w_overlap, t_time, n_jobs=4):
     cols = df_raw.columns[df_raw.columns.str.contains(r'\.X|\.Y|\.Z', regex=True)]
 
     # feature extraction settings
-    cfg = tsfel.get_features_by_domain()
+    cfg_full = tsfel.get_features_by_domain()
+
+    cfg = {
+    "statistical": {
+        "Mean": cfg_full["statistical"]["Mean"],
+        "Standard deviation": cfg_full["statistical"]["Standard deviation"]
+        }
+    }
+
+    
 
     for subject in df_raw['Subject'].unique():
 
