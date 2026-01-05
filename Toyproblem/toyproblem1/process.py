@@ -72,8 +72,6 @@ def features_tsfel(df_raw, w_size, w_overlap, t_time, n_jobs=4):
         }
     }
 
-    
-
     for subject in df_raw['Subject'].unique():
 
         # selecting dog and dc
