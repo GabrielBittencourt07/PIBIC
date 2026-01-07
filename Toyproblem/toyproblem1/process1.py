@@ -69,7 +69,6 @@ def features_tsfel(df_raw, w_size, w_overlap, t_time, n_jobs=4):
         "statistical": {
             "Mean": cfg_full["statistical"]["Mean"],
             "Standard deviation": cfg_full["statistical"]["Standard deviation"],
-            "Euclidean distance": cfg_full["statistical"]["Euclidean distance"]
         }
     }
 
