@@ -1,0 +1,135 @@
+=============================================
+Pre-training Dataset: SleepEEG
+Target (fine-tuning) Dataset: Epilepsy
+Method:  TF-C
+Mode:    fine_tune_test
+=============================================
+Data loaded ...
+Training started ....
+
+Epoch : 1
+Test on Target datasts test set
+
+Epoch : 2
+Test on Target datasts test set
+
+Epoch : 3
+Test on Target datasts test set
+
+Epoch : 4
+Test on Target datasts test set
+
+Epoch : 5
+Test on Target datasts test set
+
+Epoch : 6
+Test on Target datasts test set
+
+Epoch : 7
+Test on Target datasts test set
+
+Epoch : 8
+Test on Target datasts test set
+
+Epoch : 9
+Test on Target datasts test set
+
+Epoch : 10
+Test on Target datasts test set
+
+Epoch : 11
+Test on Target datasts test set
+
+Epoch : 12
+Test on Target datasts test set
+
+Epoch : 13
+Test on Target datasts test set
+
+Epoch : 14
+Test on Target datasts test set
+
+Epoch : 15
+Test on Target datasts test set
+
+Epoch : 16
+Test on Target datasts test set
+
+Epoch : 17
+Test on Target datasts test set
+
+Epoch : 18
+Test on Target datasts test set
+
+Epoch : 19
+Test on Target datasts test set
+
+Epoch : 20
+Test on Target datasts test set
+
+Epoch : 21
+Test on Target datasts test set
+
+Epoch : 22
+Test on Target datasts test set
+
+Epoch : 23
+Test on Target datasts test set
+
+Epoch : 24
+Test on Target datasts test set
+
+Epoch : 25
+Test on Target datasts test set
+
+Epoch : 26
+Test on Target datasts test set
+
+Epoch : 27
+Test on Target datasts test set
+
+Epoch : 28
+Test on Target datasts test set
+
+Epoch : 29
+Test on Target datasts test set
+
+Epoch : 30
+Test on Target datasts test set
+
+Epoch : 31
+Test on Target datasts test set
+
+Epoch : 32
+Test on Target datasts test set
+
+Epoch : 33
+Test on Target datasts test set
+
+Epoch : 34
+Test on Target datasts test set
+
+Epoch : 35
+Test on Target datasts test set
+
+Epoch : 36
+Test on Target datasts test set
+
+Epoch : 37
+Test on Target datasts test set
+
+Epoch : 38
+Test on Target datasts test set
+
+Epoch : 39
+Test on Target datasts test set
+
+Epoch : 40
+Test on Target datasts test set
+
+################## Best testing performance! #########################
+Best Testing Performance: Acc=91.3923| Precision = 90.0003 | Recall = 81.6020 | F1 = 84.9218 | AUROC= 89.0086 | AUPRC=87.3619
+Best KNN F1 0.7985555635112533
+
+################## Training is Done! #########################
+Training time is : 0:01:08.351226

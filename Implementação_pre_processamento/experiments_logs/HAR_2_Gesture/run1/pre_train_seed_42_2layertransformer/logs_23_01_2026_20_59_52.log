@@ -1,0 +1,11 @@
+=============================================
+Pre-training Dataset: HAR
+Target (fine-tuning) Dataset: Gesture
+Method:  TF-C
+Mode:    pre_train
+=============================================
+Data loaded ...
+Training started ....
+
+################## Training is Done! #########################
+Training time is : 0:03:43.541622

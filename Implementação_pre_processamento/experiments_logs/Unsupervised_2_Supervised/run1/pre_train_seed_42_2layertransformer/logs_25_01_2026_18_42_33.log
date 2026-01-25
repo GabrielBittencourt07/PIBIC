@@ -1,0 +1,6 @@
+=============================================
+Pre-training Dataset: Unsupervised
+Target (fine-tuning) Dataset: Supervised
+Method:  TF-C
+Mode:    pre_train
+=============================================

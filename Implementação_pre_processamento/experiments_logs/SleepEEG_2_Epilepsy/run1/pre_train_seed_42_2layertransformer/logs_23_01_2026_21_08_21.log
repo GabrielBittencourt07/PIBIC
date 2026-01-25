@@ -1,0 +1,11 @@
+=============================================
+Pre-training Dataset: SleepEEG
+Target (fine-tuning) Dataset: Epilepsy
+Method:  TF-C
+Mode:    pre_train
+=============================================
+Data loaded ...
+Training started ....
+
+################## Training is Done! #########################
+Training time is : 0:03:11.063014

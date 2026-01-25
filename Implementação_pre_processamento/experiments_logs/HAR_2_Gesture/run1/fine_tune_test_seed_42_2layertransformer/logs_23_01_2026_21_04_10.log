@@ -1,0 +1,10 @@
+=============================================
+Pre-training Dataset: HAR
+Target (fine-tuning) Dataset: Gesture
+Method:  TF-C
+Mode:    fine_tune_test
+=============================================
+Data loaded ...
+Training started ....
+
+Epoch : 1
